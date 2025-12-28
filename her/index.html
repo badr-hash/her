@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Love Letter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<audio autoplay loop>
+    <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<img src="assets/bunnies/bunny-left.png" class="bunny left" id="bunnyLeft">
+<img src="assets/bunnies/bunny-right.png" class="bunny right" id="bunnyRight">
+
+<!-- Prompt Section -->
+<div id="prompt" class="prompt-container">
+    <div class="prompt-box">
+        <p class="prompt-text">Do you want to read something I've been holding in my heart for you? 🐰</p>
+        <div class="button-container">
+            <button id="yesBtn" class="btn btn-yes">Yes 💕</button>
+            <button id="noBtn" class="btn btn-no">No</button>
+        </div>
+        <p id="sad-message" class="sad-message" style="display: none;">Come on... just give me a chance? 🥺</p>
+    </div>
+</div>
+
+<!-- Love Letter Section -->
+<div id="letterSection" class="paper" style="display: none;">
+    <h1>My Love,</h1>
+    <p id="letter"></p>
+    <div id="chiikawa-container"></div>
+    <p class="signature">— Always yours Lia 💕</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

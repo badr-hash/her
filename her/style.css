@@ -1,0 +1,354 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background: linear-gradient(135deg, #ffd6e8 0%, #fff0f5 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paper {
+    background: white;
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 90%;
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    color: #d4639e;
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#letter {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    text-align: justify;
+    min-height: 200px;
+}
+
+.signature {
+    text-align: right;
+    color: #d4639e;
+    font-size: 1.2em;
+    margin-top: 40px;
+    font-style: italic;
+}
+
+.bunny {
+    position: fixed;
+    width: 130px;
+    opacity: 0.95;
+    z-index: 1;
+}
+
+.bunny.left {
+    bottom: 20px;
+    left: 20px;
+}
+
+.bunny.right {
+    bottom: 20px;
+    right: 20px;
+}
+
+/* Prompt Styles */
+.prompt-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prompt-box {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(212, 99, 158, 0.3);
+    max-width: 400px;
+    text-align: center;
+    animation: scaleIn 0.6s ease-out;
+}
+
+.prompt-text {
+    font-size: 1.5em;
+    color: #d4639e;
+    margin-bottom: 30px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.btn-yes {
+    background: linear-gradient(135deg, #FFB3D9 0%, #FF69B4 100%);
+    color: white;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+}
+
+.btn-yes:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.5);
+}
+
+.btn-no {
+    background: #f0f0f0;
+    color: #666;
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.btn-no:hover {
+    background: #e0e0e0;
+    transform: translate(0, 0);
+}
+
+.sad-message {
+    color: #d4639e;
+    font-size: 0.9em;
+    font-style: italic;
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+/* Chiikawa Styles */
+#chiikawa-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    min-height: 50px;
+}
+
+.chiikawa {
+    font-size: 2em;
+    animation: floatUp 3s ease-out forwards;
+    opacity: 0.8;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-50px) scale(0.8);
+        opacity: 0;
+    }
+}
+
+/* Bunny animations */
+.bunny {
+    position: fixed;
+    width: 150px;
+    opacity: 0.9;
+    z-index: 1;
+    filter: drop-shadow(0 5px 10px rgba(212, 99, 158, 0.2));
+    animation: gentle-float 6s ease-in-out infinite;
+}
+
+.bunny.left {
+    bottom: 30px;
+    left: 25px;
+    animation-delay: 0s;
+}
+
+.bunny.right {
+    bottom: 30px;
+    right: 25px;
+    animation-delay: 1s;
+}
+
+@keyframes gentle-float {
+    0%, 100% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-15px) rotate(2deg);
+    }
+}
+
+/* Prompt Styles */
+.prompt-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prompt-box {
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 20px 60px rgba(212, 99, 158, 0.3);
+    max-width: 400px;
+    text-align: center;
+    animation: scaleIn 0.6s ease-out;
+}
+
+.prompt-text {
+    font-size: 1.5em;
+    color: #d4639e;
+    margin-bottom: 30px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.btn {
+    padding: 12px 30px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.btn-yes {
+    background: linear-gradient(135deg, #FFB3D9 0%, #FF69B4 100%);
+    color: white;
+    box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+}
+
+.btn-yes:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(255, 105, 180, 0.5);
+}
+
+.btn-no {
+    background: #f0f0f0;
+    color: #666;
+    position: relative;
+    transition: transform 0.2s ease;
+}
+
+.btn-no:hover {
+    background: #e0e0e0;
+    transform: translate(0, 0);
+}
+
+.sad-message {
+    color: #d4639e;
+    font-size: 0.9em;
+    font-style: italic;
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in;
+}
+
+/* Chiikawa Styles */
+#chiikawa-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+    min-height: 50px;
+}
+
+.chiikawa {
+    font-size: 2em;
+    animation: floatUp 3s ease-out forwards;
+    opacity: 0.8;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-50px) scale(0.8);
+        opacity: 0;
+    }
+}

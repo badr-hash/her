@@ -1,0 +1,26 @@
+<svg width="200" height="200" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Body -->
+  <ellipse cx="100" cy="120" rx="45" ry="55" fill="#FFF0F5" stroke="#FFB3D9" stroke-width="2"/>
+  <!-- Head -->
+  <circle cx="100" cy="70" r="35" fill="#FFF0F5" stroke="#FFB3D9" stroke-width="2"/>
+  <!-- Left Ear -->
+  <ellipse cx="75" cy="20" rx="15" ry="35" fill="#FFF0F5" stroke="#FFB3D9" stroke-width="2"/>
+  <ellipse cx="75" cy="20" rx="8" ry="25" fill="#FFB3D9"/>
+  <!-- Right Ear -->
+  <ellipse cx="125" cy="25" rx="15" ry="35" fill="#FFF0F5" stroke="#FFB3D9" stroke-width="2"/>
+  <ellipse cx="125" cy="25" rx="8" ry="25" fill="#FFB3D9"/>
+  <!-- Eyes -->
+  <circle cx="88" cy="60" r="5" fill="#333"/>
+  <circle cx="112" cy="60" r="5" fill="#333"/>
+  <!-- Nose -->
+  <circle cx="100" cy="75" r="3" fill="#FF69B4"/>
+  <!-- Mouth -->
+  <path d="M 100 75 Q 95 82 90 80" stroke="#333" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <path d="M 100 75 Q 105 82 110 80" stroke="#333" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+  <!-- Front Paws -->
+  <ellipse cx="85" cy="160" rx="12" ry="20" fill="#FFF0F5" stroke="#FFB3D9" stroke-width="2"/>
+  <ellipse cx="115" cy="160" rx="12" ry="20" fill="#FFF0F5" stroke="#FFB3D9" stroke-width="2"/>
+  <!-- Blush -->
+  <ellipse cx="70" cy="70" rx="8" ry="6" fill="#FFCCDD" opacity="0.7"/>
+  <ellipse cx="130" cy="70" rx="8" ry="6" fill="#FFCCDD" opacity="0.7"/>
+</svg>
